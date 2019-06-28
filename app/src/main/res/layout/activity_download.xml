@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DownloadActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+
+            <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:siShape="@drawable/rect"
+                app:siSquare="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/postimage"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <com.thedevelopershome.taskbrochill.customfonts.Button_Roboto_Medium
+                    android:id="@+id/download"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#f15421"
+                    android:text="Download Image"
+                    android:textColor="#ffffff"
+                    android:textSize="14.4sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/viewgrey"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
